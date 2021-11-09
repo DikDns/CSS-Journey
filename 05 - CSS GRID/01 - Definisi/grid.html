@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 - Definisi</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            margin: 50px auto;
+            width: 400px;
+            border: 3px solid #444;
+            padding: 5px;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-areas: 
+                "header header"
+                "aside main"
+                "nav main"
+                "footer footer";
+            grid-template-columns: 1fr 1.5fr;
+            grid-template-rows: 1fr 1fr 1.3fr;
+        }
+
+        header {
+            background-color: violet;
+            padding: 20px;
+            grid-area: header;
+        }
+
+        footer {
+            background: dimgray;
+            padding: 20px;
+            grid-area: footer;
+        }
+
+        main {
+            background: rgb(255, 175, 146);
+            padding: 50px;
+            grid-area: main;
+        }
+
+        nav {
+            padding: 30px;
+            background: red;
+            grid-area: nav;
+        }
+
+        aside {
+            background: rgb(95, 210, 255);
+            padding: 30px;
+            grid-area: aside;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>Header</header>
+        <main>Main</main>
+        <nav>Nav</nav>
+        <aside>Aside</aside>
+        <footer>Footer</footer>
+    </div>
+    
+</body>
+</html>
