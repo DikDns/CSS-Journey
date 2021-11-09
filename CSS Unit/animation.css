@@ -1,0 +1,23 @@
+.angle:hover {
+    background-color: bisque;
+}
+
+.angle .deg:hover {
+    transition: 1s;
+    transform: rotate(-30deg);
+}
+
+.angle .radian:hover {
+    transition: 1s;
+    transform: rotate(30deg);
+}
+
+.angle .gradian:hover {
+    transition: 1s;
+    transform: rotate(-30deg);
+}
+
+.angle .turn:hover {
+    transition: 1s;
+    transform: rotate(30deg);
+}

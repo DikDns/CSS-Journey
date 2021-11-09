@@ -1,0 +1,24 @@
+
+/***********************************/
+/*!       Length - Relative        */
+/***********************************/
+/*    %  = Parent                  */
+/*   em  = ukuran Font             */
+/*  rem  = size Font root          */
+/*   ch  = lebar character 0 font  */
+/*      (  100vh = 100%  )         */
+/*   vh  = tinggi viewport         */
+/*   vw  = lebar  viewport         */
+/*  vmin = viewport terkecil       */
+/*  vmax = viewport terbesar       */
+/***********************************/
+
+
+/***********************************/
+/*!       Length - Absolute        */
+/***********************************/
+/* px 1/96 of 1 inch (96px = 1in)  */
+/* pt 1/72 of 1 inch (72pt = 1in)  */
+/* pc 1 = 12pt                     */
+/***********************************/
+

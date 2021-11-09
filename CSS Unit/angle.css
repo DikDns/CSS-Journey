@@ -1,0 +1,24 @@
+
+/**************/
+/*!ANGLE UNIT**/
+/**************/
+
+.angle .deg {
+    transform: rotate(30deg);
+    transition: .5s;
+}
+/*  π / 6  */
+.angle .radian {
+    transform: rotate(-0.523333333rad);
+    transition: .5s;
+}
+/*  33 ⅓  */
+.angle .gradian {
+    transform: rotate(33.3grad);
+    transition: .5s;
+}
+/*  1/12  */
+.angle .turn {
+    transform: rotate(-0.08333333turn);
+    transition: .5s;
+}
