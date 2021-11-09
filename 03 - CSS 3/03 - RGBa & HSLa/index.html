@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>03 - RGBa & HSLa</title>
+	<style>
+		body {
+			background-image: url(Circle.jpg);
+			background-size: 5px;
+		}
+
+		/* Cara membuat parent nya saja yg transparant menggunaakan transparant di warnanya*/
+
+		.satu {
+			width: 200px;
+			height:200px;
+			background-color: hsla(24,100%,68%,0.5);
+			position: relative;
+		}
+		.dua {
+			width: 100px;
+			height: 100px;
+			background-color: rgba(0,0,255,0.9);
+			position: absolute;
+			right: -50px;
+			bottom: -50px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="satu">
+		<div class="dua"></div>
+	</div>
+
+</body>
+</html>

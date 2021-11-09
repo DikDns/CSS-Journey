@@ -1,0 +1,232 @@
+/* Font Face */
+@font-face {
+	font-family: "alexbrush";
+	src: url('../fonts/alexbrush.woff') format('woff');
+}
+@font-face {
+	font-family: "opensans";
+	src: url("../fonts/opensans.woff") format('woff');
+}
+
+/* Style Utama */
+
+/*Body*/
+body {
+	font: 14px opensans, sans-serif;
+	background-color: #ddd;
+}
+
+/*Judul halaman*/
+h1 {
+	font-family: alexbrush, serif;
+	font-size: 80px;
+	font-weight: bold;
+	line-height: 60px;
+	text-align: center;
+	margin: 50px 0;
+	text-shadow: 3px 5px 5px rgba(255,255,255,1);
+}
+
+/*Container*/
+.container {
+	width: 720px;
+	background-color: white;
+	margin: auto;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 5px 2px black;
+	box-sizing: border-box;
+}
+
+/*Resolusi Image*/
+.gallery li a img {
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+}
+
+/* Animation Hover*/
+
+.gallery li span {
+	display: block;
+	width: 140px;
+	height: 140px;
+	position: absolute;
+	background-color: rgba(200,200,200,.5);
+	border-radius: 50%;
+	top: 0;
+	left: 0;
+	text-align: center;
+	line-height: 140px;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 2px 2px 5px black;
+	opacity: 0;
+	transform: scale(0) rotate(0);
+	transition: all .5s;
+}
+
+.gallery li a:hover span {
+	opacity: 1;
+	transform: scale(1) rotate(360deg);
+}
+
+/* BOX GALLERY NYA */
+
+.gallery li {
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	border: 5px solid gray;
+	margin: 0 10px 15px;
+	float: left;
+	position: relative;
+}
+
+/* TAMPILAN OVERLAY NYA! */
+
+.overlay {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,0);
+	z-index: 9999;
+	padding: 50px 0;
+	text-align: center;
+	transition: .5s;
+}
+
+.overlay:target {
+	width: auto;
+	height: auto;
+	bottom: 0; 
+	right: 0;
+	background: rgba(0,0,0,.7);
+}
+
+.overlay img {
+	max-height: 100%;
+	box-shadow: 2px 2px 6px black;
+}
+
+.overlay:target img {
+	animation: fade .6s;
+}
+
+.overlay:target .next, .overlay:target .prev {
+	animation: fade .6s .6s forwards;
+}
+
+
+/* OVERLAY CLOSE BUTTON */
+.overlay .close {
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	top: 20px;
+	color: #eee;
+	text-decoration: none;
+	line-height: 22px;
+	font-weight: bold;
+	background: red;
+	border: 2px solid #eee;
+	border-radius: 25%;
+	opacity: 0;
+}
+
+.overlay:target .close{
+	animation: buttonAnimated .6s .6s forwards;
+}
+
+/* NAVIGATION STYLE */
+
+.next, .prev {
+	opacity: 0;
+	width: 50px;
+	height: 50px;
+	background-image: url("../img/kanan.png");
+	position: absolute;
+	top: 45%;
+	margin-left: 50px;
+}
+
+.prev {
+	background-image: url("../img/kiri.png");
+	margin-left: -100px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 50px;
+	background-color: #333;
+	line-height: 50px;
+	text-align: center;
+}
+
+footer p, footer a {
+	text-decoration: none;
+	color: #eee;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+
+
+/* ANIMASI !!! */
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes zoom-in-gambar {
+	0% {
+		transform: scale(0);
+		opacity: 0;
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes buttonAnimated{
+	0% {
+		opacity: 0;
+		margin-top: -30px;
+	}
+
+	100% {
+		opacity: 1;
+		margin-top: 0; 
+	}
+}
+
+/* Clear Float*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}

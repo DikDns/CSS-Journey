@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>02 - Opacity</title>
+	<style>
+		body {
+			background-image: url(Circle.jpg);
+			background-size: 25px;
+		}
+
+		.satu {
+			width: 200px;
+			height:200px;
+			background-color: #ff6600;
+			position: relative;
+			opacity: 0.5;
+		}
+		/* Opacity child selalu relative terhadap parentnya! */
+		.dua {
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			position: absolute;
+			right: -50px;
+			bottom: -50px;
+			opacity: .5;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="satu">
+		<div class="dua"></div>
+	</div>
+
+</body>
+</html>

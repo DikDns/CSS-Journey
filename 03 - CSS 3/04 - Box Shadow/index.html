@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>04 - Box Shadow</title>
+	<style>
+		/*
+			box-shadow: <inset> <x> <y> <blur> <spread> <color>;
+		*/
+		div {
+			width: 300px;
+			height: 300px;
+			background-color: #39b54a;
+			margin: 50px auto;
+			transition: .3s;
+		}
+		.satu {
+			box-shadow: 5px 5px 10px rgba(0,0,0,.75);
+		}
+
+		.dua {
+			box-shadow: inset 0px 0px 10px 5px rgba(255,255,255,.75)
+		}
+		.tiga {
+			width: 275px;
+			height: 275px;
+
+			background-color: white;
+			box-shadow: 0px 0px 0px 5px red,
+				0 0 0 10px orange,
+				0 0 0 15px yellow,
+				0 0 0 20px green,
+				0 0 0 25px blue;
+			border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="satu"></div>
+	<div class="dua"></div>
+	<div class="tiga"></div>
+
+</body>
+</html>

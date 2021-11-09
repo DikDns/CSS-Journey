@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>10 - Transform</title>
+	<style>
+		/*
+			Transform:
+				scale, rotate, skew, translate
+		*/
+		div {
+			line-height: 200px;
+			text-align: center;
+		}
+
+		p {
+			text-align: center;
+			font-size: 20px;
+		}
+
+		div {
+			display: inline-block;
+			width: 200px;
+			height: 200px;
+			background-color: lightskyblue; 
+			margin: 50px 50px 0;
+			transition: 0.8s;
+		}
+
+		.scale:hover {
+			transform: scale(2, 1);
+		}
+
+		.rotate:hover {
+			transform: rotate(90deg) rotatex(180deg) rotatey(180deg) ;
+		}
+
+		.skew:hover {
+			transform: skewx(30deg) skewy(30deg); 
+		}
+
+		.translate:hover {
+			transform: translatex(100px) translatey(200px);
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<div class="scale">scale</div>
+	<div class="rotate">rotate</div>
+	<div class="skew">skew</div>
+	<div class="translate">translate</div>
+	<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti possimus sunt dolores nemo eveniet, accusamus veritatis veniam, ipsa fuga ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ratione maxime dolorem nihil ea voluptate officia numquam corporis, beatae debitis, iusto dolor nesciunt! Ducimus, modi.</p>
+	
+</body>
+</html>

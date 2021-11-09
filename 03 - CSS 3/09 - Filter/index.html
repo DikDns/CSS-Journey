@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>09 - Filter</title>
+	<style>
+		body {
+			text-align: center;
+		}
+
+		/*
+			Filter:
+				blur, grayscale, invert, brightness, sepia, opacity, contrast, hue-rotate, drop-shadow, saturate.
+
+			Web Simulator CSS:
+				https://html5-demos.appspot.com/static/css/filters/index.html
+		*/
+
+		img {
+			filter: blur(20px) grayscale(100%);
+		}
+
+		img:hover {
+			filter: blur(0) drop-shadow(0 10px 5px gray);
+		}
+
+	</style>
+</head>
+<body>
+
+	<img class="logo" src="logo.png" alt="Text DnS">
+	<img class="img" src="img.png" alt="Logo DnS">
+	
+</body>
+</html>						
