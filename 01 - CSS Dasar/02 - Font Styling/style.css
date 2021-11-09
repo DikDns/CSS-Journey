@@ -1,0 +1,31 @@
+/*
+	Font:
+		font-family
+			mengatur jenis font
+		font-size
+			mengatur ukuran font
+		font-weight
+			mengatur ketebalan font
+		font-variant 
+			mengubah font menjadi small caps
+		font-style
+			mengubah gaya font
+		line-height
+			mengatur spasi antar baris
+
+	shorthand font:
+		font: font-style font-variant font-wight font-size/line-height font-family;
+*/
+
+h1 {
+	font-family: arial, vendana, sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	font-variant: small-caps;
+	font-style: oblique;
+}
+
+p {
+	font-family: georgia, serif;
+	line-height: 30px;
+}

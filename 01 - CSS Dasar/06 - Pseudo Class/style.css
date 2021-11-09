@@ -1,0 +1,34 @@
+/*
+	PseudoClass:
+		Link:
+			:link :hover :active :visited
+
+		Posisi Elemen:
+			:first-child :last-child :nth-child(n)
+			:first-of-type :last-of-type	
+*/
+
+p:first-of-type {
+	color: lightblue;
+}
+
+p:last-of-type {
+	color: lightgreen;
+}
+
+li:nth-child(odd) a {
+	color: coral;
+}
+
+li:nth-child(2n) a {
+	color: lightgreen;
+}
+
+li a:hover {
+	color: blue;
+	font-size: 20px;
+}
+
+li a:visited {
+	color: gray;
+}

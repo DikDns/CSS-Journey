@@ -1,0 +1,23 @@
+/*
+	Text:
+		color
+		text-align
+		text-indent
+		text-decoration
+		text-transform
+		letter-spacing
+		word-spacing	
+*/
+
+h1 {
+	color: #010101;
+	text-decoration: overline;
+}
+
+p {
+	text-align: justify;
+	text-indent: 10px;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+	word-spacing: 5px;
+}

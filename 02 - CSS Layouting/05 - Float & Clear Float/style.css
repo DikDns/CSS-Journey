@@ -1,0 +1,26 @@
+/*
+	Float untuk:
+		text wrapping, image gallery, multi-column kayout, dll
+
+	setelah membuat float harus di clear 
+	dengan menggunakan div kosong dan property clear: both;
+*/
+
+.satu, .dua, .tiga {
+	width: 100px; 
+	height: 100px; 
+}
+
+.satu {
+	background-color: salmon;
+	float: right;
+}
+
+.dua {
+	background-color: lightblue;
+}
+
+.tiga {
+	background-color: lightgreen; 
+	float: right;
+}

@@ -1,0 +1,16 @@
+/*
+	background
+		background-color
+		background-image
+		background-position
+		background-repeat
+
+	background: color url() position repeat;
+*/
+
+body {
+	background-color: #ffffff;
+	background-image: url(pattern1.png);
+	background-repeat:repeat-x;
+	background-position: center top;
+}

@@ -1,0 +1,46 @@
+body {
+
+	height: 1000px;
+}
+
+div {
+	width: 100px;
+	height: 100px;
+	margin: auto;
+}
+
+/*
+	Position:
+		static, relative, absolute, fixed
+*/
+
+.container {
+	width: 600px;
+	height: 600px;
+	border: gray solid 5px;
+	position: relative;
+}
+
+.satu {
+	width: 100%;
+	height: 10px;
+	background-color: green;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.dua {
+	background-color: blue;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.tiga {
+	background-color: red;
+	position: relative;
+	top: -25px;
+	right: 500px;
+
+}

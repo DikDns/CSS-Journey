@@ -1,0 +1,10 @@
+/*
+	selector { property: value; }
+*/
+body {
+		font-family: arial;
+	}
+
+	h1 {
+		color: lightblue;
+	}

@@ -1,0 +1,19 @@
+/*
+	selector:
+		taghtml
+		#id
+		.class
+*/
+
+.header, .paragraf {
+	font-family: arial;
+}
+
+#sj2 {
+	color: coral;
+}
+
+.paragraf2 {
+	font-size: 25px;
+}
+
